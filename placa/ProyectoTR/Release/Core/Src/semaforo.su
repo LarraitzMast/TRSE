@@ -1,0 +1,11 @@
+../Core/Src/semaforo.c:16:6:handleGPIOEXTIPIR	0	static
+../Core/Src/semaforo.c:27:6:setRojo	8	static
+../Core/Src/semaforo.c:35:6:setAmbar	8	static
+../Core/Src/semaforo.c:43:6:setVerde	8	static
+../Core/Src/semaforo.c:51:6:setSirena	8	static
+../Core/Src/semaforo.c:71:6:resetSirena	8	static
+../Core/Src/semaforo.c:77:6:runSemaforoNormal	8	static
+../Core/Src/semaforo.c:86:6:runSemaforoBloqueoAmbulancia	8	static
+../Core/Src/semaforo.c:92:6:runSemaforoBloqueoTotal	8	static
+../Core/Src/semaforo.c:98:6:runSirena	8	static
+../Core/Src/semaforo.c:103:6:stopSirena	0	static

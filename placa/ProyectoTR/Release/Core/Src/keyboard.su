@@ -1,0 +1,7 @@
+../Core/Src/keyboard.c:11:6:writeColum	0	static
+../Core/Src/keyboard.c:31:9:readRow	0	static
+../Core/Src/keyboard.c:54:9:delayKey	8	static
+../Core/Src/keyboard.c:62:9:getKeyBoardColumn	24	static
+../Core/Src/keyboard.c:81:6:resetKeyBoard	8	static
+../Core/Src/keyboard.c:91:6:getKeyBoardMsg	16	static
+../Core/Src/keyboard.c:96:6:handleKeyBoard	8	static

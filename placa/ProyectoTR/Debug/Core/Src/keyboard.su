@@ -1,0 +1,7 @@
+../Core/Src/keyboard.c:13:6:stateKeyBoard	16	static
+../Core/Src/keyboard.c:36:8:isANumber	16	static
+../Core/Src/keyboard.c:40:8:isAnEmergencyType	16	static
+../Core/Src/keyboard.c:50:9:delayKey	8	static
+../Core/Src/keyboard.c:59:6:handleKeyBoard	40	static
+../Core/Src/keyboard.c:88:6:writeColum	16	static
+../Core/Src/keyboard.c:109:9:readRow	24	static
