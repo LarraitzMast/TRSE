@@ -1,0 +1,9 @@
+../Core/Src/semaforo.c:17:6:stateSemaforo	16	static
+../Core/Src/semaforo.c:57:6:runSemaforoNormal	8	static
+../Core/Src/semaforo.c:67:6:runSemaforoBloqueoAmbulancia	8	static
+../Core/Src/semaforo.c:74:6:runSemaforoBloqueoTotal	8	static
+../Core/Src/semaforo.c:82:6:setRojo	8	static
+../Core/Src/semaforo.c:90:6:setAmbar	8	static
+../Core/Src/semaforo.c:98:6:setVerde	8	static
+../Core/Src/semaforo.c:110:6:runSirena	8	static
+../Core/Src/semaforo.c:121:6:stopSirena	8	static

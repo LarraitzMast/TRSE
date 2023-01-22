@@ -1,0 +1,50 @@
+TODO List
+
+Hecho
+- ✅ Crear defines para los pines hardware
+        Ej. #define REG_KEY_COL_0   GPIOA
+            #define PIN_KEY_COL_0   GPIO_PIN_1
+        Con esto abstraemos el hardware y si queremos cambiar un pin es más fácil
+
+- ✅ Actualizar todos los pines del código
+
+- ✅ Crear funciones para crear los objetos y tareas (evitando que se borre)
+
+- ✅ Añadir una cola para la gestión del caracter recibido de la UART.
+        Investigando si que se pueden usar colas en las interrupciones pero necesitan de timeout 0.
+
+- ✅ Añadir la gestión del teclado
+        - Interrupción que lee la tecla y la guarda en una cola. (Con debounce incluido)
+        - Tarea que espera a la tecla (con la cola) y dependiendo del estado permite enviar o no.
+        - Funciones que comprueban si una tecla es un dígito (0 - 9) o un tipo de emergencia (A - D)
+
+- ✅ Añadir gestión de ASK_TO_EMERGENCY (caracter ?) a handleUART
+
+- ✅ Añadir event flag bloqueante (osEventFlagsWait) en la tarea de la sirena.
+
+Por hacer
+1. ✅ Testear todo el funcionamiento del teclado completo.
+2. [] Unir ambas HAL_GPIO_EXTI_Callback (gestión de PIR y gestión del teclado).
+3. [] Testear pines de los LEDS (semaforo y ambulancia) y del PIR.
+4. [] Gestionar bucle y parada de la sirena.
+5. [] Rehacer (o copiar) el código de la tarea de gestión y handleUART
+
+Comentarios sobre tareas por hacer
+2. Ahora mismo la gestión del teclado da bastantes errores (teclas incorrectas). Si da tiempo sería interesante echarle un vistazo.
+4. Al añadirse el event flag bloqueante no se puede hacer como antes. 
+    Mi propuesta es meter runSirena en un bucle con una variable global. El código encargado de parar la sirena modifica esta variable y sale del bucle.
+    Es solo una propuesta y puede cambiarlo el que lo implemente.
+5. Ahora la tarea se bloquea para esperar por un caracter. Hay que adaptar el código anterior a esto.
+
+Por hacer en el futuro (cercano)
+6. [] Reorganizar el código.
+7. [] La memoria :D
+
+Había pensado en dividir de la siguiente manera:
+1. Álvaro y Nuria (en clase mañana)
+2. Álvaro
+3. Larraitz
+4. Nuria
+5. Álvaro y Larraitz
+6. Ya se verá
+7. Todos
